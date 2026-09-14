@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioIA - Reconocimiento Botánico STEAM | IEA Santa Rita</title>
+    <!-- Tailwind CSS para un diseño responsivo y moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos referentes a STEAM, Botánica y Tecnología -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .steam-gradient {
+            background: linear-gradient(135deg, #065f46 0%, #0d9488 50%, #0369a1 100%);
+        }
+        .botanic-glow {
+            box-shadow: 0 10px 30px -5px rgba(13, 148, 136, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-emerald-50/50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Encabezado Institucional & STEAM -->
+    <header class="steam-gradient text-white shadow-lg">
+        <div class="max-w-md mx-auto px-4 py-5 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white/15 p-2.5 rounded-2xl backdrop-blur-md border border-white/20 shadow-inner">
+                    <i class="fa-solid fa-seedling text-2xl text-emerald-200"></i>
+                </div>
+                <div>
+                    <h1 class="font-black text-lg tracking-wide leading-tight">H.O.J.A.S  - IEA Santa Rita</h1>
+                    <p class="text-xs text-emerald-100 flex items-center gap-1 mt-0.5 font-medium">
+                        <i class="fa-solid fa-microchip text-[10px] text-teal-300"></i> Herramienta Optimizada para Jóvenes en Análisis STEAM
+                    </p>
+                </div>
+            </div>
+            <div class="flex space-x-2.5 text-teal-200 text-lg">
+                <i class="fa-solid fa-atom" title="Ciencia y Tecnología"></i>
+                <i class="fa-solid fa-leaf" title="Naturaleza"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-md mx-auto px-4 py-6 w-full flex-grow flex flex-col items-center">
+        
+        <!-- Tarjeta de Bienvenida y Propósito -->
+        <div class="bg-white w-full rounded-2xl p-5 botanic-glow border border-emerald-100 mb-5 text-center relative overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 text-emerald-50 opacity-40 text-8xl pointer-events-none">
+                <i class="fa-solid fa-spa"></i>
+            </div>
+            <div class="inline-block p-3 bg-emerald-100 text-emerald-700 rounded-2xl mb-3 shadow-sm">
+                <i class="fa-solid fa-brain text-xl"></i>
+            </div>
+            <h2 class="text-base font-bold text-slate-800">Identificador Botánico con Inteligencia Artificial</h2>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                Herramienta interactiva desarrollada para la identificación de especies vegetales del entorno natural, integrando ciencia, tecnología y saberes locales.
+            </p>
+        </div>
+
+        <!-- Botón de Acceso Principal al Modelo (Solución al bloqueo de iframe) -->
+        <div class="w-full bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-6 botanic-glow text-white text-center mb-5 border border-emerald-500">
+            <div class="mb-3 text-3xl text-emerald-200 animate-pulse">
+                <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <h3 class="font-bold text-base mb-1">Iniciar Escaneo de Planta</h3>
+            <p class="text-xs text-emerald-100 mb-4 px-2">
+                Abre la interfaz de reconocimiento en tiempo real con tu cámara de dispositivo.
+            </p>
+            <a href="https://teachablemachine.withgoogle.com/models/qgaA8ZJ1e/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center w-full py-3.5 px-5 bg-white text-emerald-800 hover:bg-emerald-50 text-sm font-bold rounded-xl shadow-lg transition-all duration-200 gap-2 transform active:scale-95">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Abrir Cámara y Detectar o cargar foto de planta
+            </a>
+        </div>
+
+        <!-- Panel de Resultados Esperados / Instrucciones de Uso -->
+        <div class="bg-white w-full rounded-2xl p-5 botanic-glow border border-emerald-100 space-y-4">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-emerald-800 flex items-center gap-2 border-b border-slate-100 pb-2">
+                <i class="fa-solid fa-list-check text-teal-600"></i> Instrucciones de Uso en Campo
+            </h3>
+            
+            <ul class="space-y-3 text-xs text-slate-600">
+                <li class="flex items-start gap-2.5">
+                    <span class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-[10px]">1</span>
+                    <span>Presiona el botón verde superior para abrir el clasificador en una pestaña nueva de tu dispositivo.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                    <span class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-[10px]">2</span>
+                    <span>Concede permisos de uso a la cámara del celular cuando el navegador lo solicite.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                    <span class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-[10px]">3</span>
+                    <span>Apunta la cámara de forma estable hacia las hojas, tallo o flor de la planta que deseas reconocer.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                    <span class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center text-[10px]">4</span>
+                    <span>Visualiza en pantalla el nombre de la <strong>planta detectada</strong> y el <strong>porcentaje de seguridad</strong> arrojado por el modelo de IA en Teachable Machine.</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- Pie de página institucional -->
+    <footer class="bg-slate-900 text-slate-400 py-5 text-center text-xs border-t border-slate-800 mt-6">
+        <div class="max-w-md mx-auto px-4 flex flex-col items-center gap-1.5">
+            <p class="text-slate-200 font-bold tracking-wide">Institución Educativa Agropecuaria Santa Rita</p>
+            <p class="text-[11px] text-slate-400">La Vega, Cauca • Educación Computacional y Tecnología STEAM</p>
+            <div class="flex gap-3 mt-1 text-emerald-400 text-sm">
+                <i class="fa-solid fa-graduation-cap" title="Educación Secundaria"></i>
+                <i class="fa-solid fa-seedling" title="Enfoque Agropecuario"></i>
+                <i class="fa-solid fa-laptop-code" title="Pensamiento Computacional"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
